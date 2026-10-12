@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brown County Sportsmen's Club · Skeet, Trap &amp; 5-Stand · Green Bay, WI</title>
+<meta name="description" content="Skeet, trap and 5-stand shooting on the water in Green Bay, WI. Six fields, open 8:00 AM to dusk, 7 days a week. Open to the public.">
+<link rel="icon" href="https://skeetandtrap.com/wp-content/uploads/2024/01/cropped-Skeetandtrap.com_-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14171a; --ink-2:#1d2226; --pine:#1f3a2e; --pine-2:#2a4d3d;
+  --clay:#f26a1b; --clay-2:#ff8a3d; --cream:#f6f3ee; --paper:#ffffff;
+  --muted:#5f6b72; --line:#e4e0d8; --radius:16px;
+  --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.08);
+  --display:"Barlow Condensed",system-ui,sans-serif; --body:"Inter",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1200px,92vw);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);line-height:1.02;letter-spacing:.01em;text-transform:uppercase}
+h2{font-size:clamp(2.2rem,4.5vw,3.4rem)}
+h3{font-size:1.5rem}
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay)}
+.eyebrow::before{content:"";width:22px;height:2px;background:currentColor}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.4rem;border-radius:999px;font-weight:600;font-size:.95rem;transition:transform .15s,background .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-clay{background:var(--clay);color:#fff;box-shadow:0 6px 20px rgba(242,106,27,.35)}
+.btn-clay:hover{background:var(--clay-2)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.5);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+section{padding:96px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;margin-bottom:2.5rem;flex-wrap:wrap}
+.section-head p{max-width:46ch;color:var(--muted)}
+
+/* Top bar + nav */
+.topbar{background:var(--ink);color:#cfd6da;font-size:.85rem}
+.topbar .wrap{display:flex;justify-content:space-between;gap:1rem;padding:.5rem 0;flex-wrap:wrap}
+.topbar strong{color:#fff}
+.topbar .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#3ccf7a;margin-right:.45rem;box-shadow:0 0 0 3px rgba(60,207,122,.25)}
+header.nav{position:sticky;top:0;z-index:50;background:rgba(246,243,238,.88);backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo img{height:46px;width:auto}
+.menu{display:flex;gap:.25rem;align-items:center;list-style:none}
+.menu>li{position:relative}
+.menu>li>a{display:block;padding:.6rem .85rem;border-radius:8px;font-weight:500;font-size:.95rem}
+.menu>li>a:hover{background:rgba(0,0,0,.05)}
+.menu .has-sub>a::after{content:" ▾";font-size:.7em;opacity:.6}
+.sub{position:absolute;top:100%;left:0;min-width:260px;background:#fff;border-radius:12px;box-shadow:var(--shadow);padding:.5rem;list-style:none;opacity:0;visibility:hidden;transform:translateY(6px);transition:.15s}
+.has-sub:hover .sub,.has-sub:focus-within .sub{opacity:1;visibility:visible;transform:none}
+.sub a{display:block;padding:.55rem .75rem;border-radius:8px;font-size:.92rem}
+.sub a:hover{background:var(--cream);color:var(--clay)}
+.nav-cta{margin-left:.75rem}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px auto;transition:.2s}
+
+/* Hero */
+.hero{position:relative;min-height:min(88vh,760px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;padding:0}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% center}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,14,12,.88) 0%,rgba(10,14,12,.55) 50%,rgba(10,14,12,.1) 100%),linear-gradient(0deg,rgba(10,14,12,.6),transparent 40%)}
+.hero .wrap{position:relative;z-index:2;padding:120px 0 72px}
+.hero h1{font-size:clamp(3rem,8vw,6.4rem);max-width:12ch;margin:1rem 0 1.25rem}
+.hero h1 em{font-style:normal;color:var(--clay)}
+.hero p.lead{font-size:1.15rem;max-width:52ch;color:#e4e8ea;margin-bottom:2rem}
+.hero .actions{display:flex;gap:.75rem;flex-wrap:wrap}
+.hero-stats{display:flex;gap:2.5rem;margin-top:3.5rem;flex-wrap:wrap}
+.hero-stats div{border-left:2px solid var(--clay);padding-left:1rem}
+.hero-stats b{display:block;font-family:var(--display);font-size:2.4rem;line-height:1}
+.hero-stats span{font-size:.85rem;color:#c9d0d3}
+
+/* Quick actions */
+.quick{margin-top:-48px;position:relative;z-index:5;padding:0}
+.quick-grid{display:grid;grid-template-columns:repeat(6,1fr);background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.quick a{padding:1.4rem 1.1rem;display:flex;flex-direction:column;gap:.6rem;border-right:1px solid var(--line);transition:background .15s}
+.quick a:last-child{border-right:0}
+.quick a:hover{background:#fff7f1}
+.quick .ico{width:40px;height:40px;border-radius:10px;background:#fff1e7;color:var(--clay);display:grid;place-items:center}
+.quick .ico svg{width:22px;height:22px}
+.quick b{font-size:.95rem}
+.quick small{color:var(--muted);font-size:.8rem;line-height:1.35}
+
+/* Disciplines */
+.disc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.disc{background:#fff;border-radius:var(--radius);padding:1.75rem;border:1px solid var(--line);position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.disc:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.disc .num{position:absolute;right:1.25rem;top:.75rem;font-family:var(--display);font-size:4rem;color:#f1ede6;line-height:1}
+.disc h3{margin-bottom:.5rem;position:relative}
+.disc p{color:var(--muted);font-size:.95rem;position:relative}
+.disc .tag{display:inline-block;margin-top:1rem;font-size:.75rem;font-weight:600;padding:.25rem .6rem;border-radius:999px;background:#eaf2ee;color:var(--pine-2)}
+
+/* Aerial / about */
+.about{background:var(--pine);color:#fff}
+.about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:4rem;align-items:center}
+.about-img{border-radius:var(--radius);overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.35);aspect-ratio:4/3}
+.about-img img{width:100%;height:100%;object-fit:cover;object-position:45% center}
+.about p{color:#cfe0d7;margin:1rem 0}
+.checks{list-style:none;display:grid;gap:.7rem;margin:1.5rem 0 2rem}
+.checks li{display:flex;gap:.75rem;align-items:flex-start}
+.checks li::before{content:"";flex:0 0 20px;height:20px;margin-top:2px;border-radius:50%;background:var(--clay) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/12px no-repeat}
+
+/* Hours */
+.hours-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.hours-card{background:#fff;border-radius:var(--radius);padding:1.75rem;border:1px solid var(--line)}
+.hours-card.feature{background:var(--ink);color:#fff;border:0}
+.hours-card.feature .row span{color:#b7c0c4}
+.hours-card h3{font-size:1.35rem;margin-bottom:1rem;display:flex;align-items:center;gap:.6rem}
+.hours-card .row{display:flex;justify-content:space-between;gap:1rem;padding:.6rem 0;border-bottom:1px dashed var(--line);font-size:.95rem}
+.hours-card.feature .row{border-color:rgba(255,255,255,.12)}
+.hours-card .row:last-child{border:0}
+.hours-card .row span{color:var(--muted)}
+.hours-card .row b{font-weight:600;text-align:right}
+.note{margin-top:1.25rem;font-size:.88rem;color:var(--muted)}
+.note a{color:var(--clay);font-weight:600}
+
+/* News */
+.news{background:#fff}
+.news-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:1.25rem}
+.post{border-radius:var(--radius);overflow:hidden;background:var(--cream);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.post:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.post .thumb{aspect-ratio:16/10;overflow:hidden;background:var(--pine)}
+.post .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.post:hover .thumb img{transform:scale(1.04)}
+.post.big{grid-row:span 2}
+.post.big .thumb{aspect-ratio:auto;flex:1;min-height:260px}
+.post.big .thumb img{object-position:left top}
+.post .body{padding:1.25rem 1.4rem 1.5rem}
+.post .meta{font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--clay)}
+.post h3{font-size:1.4rem;margin:.4rem 0 .5rem;text-transform:none;font-family:var(--body);font-weight:700;letter-spacing:0;line-height:1.25}
+.post.big h3{font-size:1.75rem}
+.post p{color:var(--muted);font-size:.92rem}
+.post .more{display:inline-block;margin-top:.8rem;font-weight:600;font-size:.9rem}
+.post .more::after{content:" →";color:var(--clay)}
+.list-posts{display:grid;gap:.75rem;grid-column:span 2}
+.list-posts a{display:flex;justify-content:space-between;gap:1rem;align-items:center;padding:1rem 1.25rem;background:var(--cream);border-radius:12px;font-weight:600;font-size:.95rem}
+.list-posts a:hover{color:var(--clay)}
+.list-posts a span{color:var(--muted);font-weight:500;font-size:.8rem;white-space:nowrap}
+
+/* Programs */
+.prog-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+.prog{border-radius:var(--radius);padding:1.75rem;color:#fff;min-height:280px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;background:var(--ink-2)}
+.prog img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.45;transition:opacity .3s,transform .4s}
+.prog:hover img{opacity:.6;transform:scale(1.04)}
+.prog::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.8),transparent 70%)}
+.prog>*:not(img){position:relative;z-index:2}
+.prog .pill{align-self:flex-start;background:var(--clay);font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.3rem .65rem;border-radius:999px;margin-bottom:auto}
+.prog h3{font-size:1.7rem;margin:.5rem 0 .4rem}
+.prog p{font-size:.9rem;color:#d7dcde}
+
+/* Albert tip */
+.albert{display:grid;grid-template-columns:260px 1fr;gap:3rem;align-items:center;background:#fff;border-radius:24px;padding:2.5rem 3rem;border:1px solid var(--line)}
+.albert img{border-radius:50%;aspect-ratio:1;object-fit:cover;background:var(--cream)}
+.albert blockquote{font-family:var(--display);font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.1;text-transform:uppercase;margin:.75rem 0 1.25rem}
+
+/* Newsletter + contact */
+.cta-band{background:linear-gradient(120deg,var(--clay),#d9500a);color:#fff;border-radius:24px;padding:3rem;display:grid;grid-template-columns:1.2fr 1fr;gap:2rem;align-items:center}
+.cta-band p{color:#ffe6d6;margin-top:.5rem}
+.cta-band form{display:flex;gap:.5rem;background:#fff;padding:.4rem;border-radius:999px}
+.cta-band input{flex:1;border:0;outline:0;padding:.75rem 1rem;font:inherit;border-radius:999px;min-width:0}
+.cta-band button{border:0;background:var(--ink);color:#fff;font:inherit;font-weight:600;padding:.75rem 1.4rem;border-radius:999px;cursor:pointer}
+.contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:1.25rem;margin-top:1.25rem}
+.contact-card{background:var(--ink);color:#fff;border-radius:var(--radius);padding:2rem}
+.contact-card h3{margin-bottom:1rem}
+.contact-card .item{display:flex;gap:.9rem;padding:.8rem 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.contact-card .item:last-of-type{border:0}
+.contact-card .item small{display:block;color:#9aa5aa;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em}
+.contact-card .btn{margin-top:1rem}
+.map{border-radius:var(--radius);overflow:hidden;min-height:340px;border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;filter:saturate(.85)}
+
+/* Footer */
+footer{background:var(--ink);color:#aeb7bb;padding:72px 0 32px;font-size:.92rem}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2.5rem}
+footer h4{color:#fff;font-family:var(--display);text-transform:uppercase;font-size:1.15rem;letter-spacing:.04em;margin-bottom:1rem}
+footer ul{list-style:none;display:grid;gap:.5rem}
+footer a:hover{color:var(--clay-2)}
+.foot-logo{background:#fff;display:inline-block;padding:.6rem .9rem;border-radius:10px;margin-bottom:1rem}
+.foot-logo img{height:40px}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:3rem;padding-top:1.5rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.82rem}
+
+/* Responsive */
+@media (max-width:1080px){
+  .quick-grid{grid-template-columns:repeat(3,1fr)}
+  .quick a:nth-child(3){border-right:0}
+  .quick a:nth-child(-n+3){border-bottom:1px solid var(--line)}
+  .prog-grid{grid-template-columns:repeat(2,1fr)}
+  .news-grid{grid-template-columns:1fr 1fr}
+  .post.big{grid-column:span 2;grid-row:auto}
+}
+@media (max-width:900px){
+  .menu,.nav-cta{display:none}
+  .burger{display:block}
+  .menu.open{display:flex;flex-direction:column;align-items:stretch;position:absolute;top:76px;left:0;right:0;background:var(--cream);padding:1rem 4vw 1.5rem;border-bottom:1px solid var(--line);max-height:calc(100vh - 76px);overflow:auto}
+  .menu.open .sub{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;background:transparent;padding:0 0 0 1rem}
+  .about-grid,.cta-band,.contact-grid,.albert{grid-template-columns:1fr}
+  .albert{padding:2rem;text-align:center}
+  .albert img{max-width:200px;margin:auto}
+  .disc-grid,.hours-grid{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:600px){
+  section{padding:64px 0}
+  .quick-grid{grid-template-columns:1fr 1fr}
+  .quick a{border-right:1px solid var(--line)!important;border-bottom:1px solid var(--line)}
+  .quick a:nth-child(2n){border-right:0!important}
+  .disc-grid,.hours-grid,.prog-grid,.news-grid,.foot-grid{grid-template-columns:1fr}
+  .post.big,.list-posts{grid-column:auto}
+  .cta-band{padding:2rem}
+  .hero-stats{gap:1.5rem}
+  .topbar .hide-sm{display:none}
+}
+</style>
+</head>
+<body>
+<div style="background:#f26a1b;color:#fff;text-align:center;font-size:.85rem;font-weight:600;padding:.45rem 1rem">Design concept only, not the official site. Visit <a href="https://skeetandtrap.com/" style="text-decoration:underline">skeetandtrap.com</a></div>
+
+<div class="topbar">
+  <div class="wrap">
+    <div><span class="dot"></span><strong>Open daily 8:00 AM – dusk</strong> · Open to the public</div>
+    <div class="hide-sm">1711 W. Deerfield Ave, Green Bay, WI · <a href="tel:9204349930"><strong>(920) 434-9930</strong></a></div>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="https://skeetandtrap.com/" class="logo"><img src="img/bcsc-logo.png" alt="Brown County Sportsmen's Club"></a>
+    <nav>
+      <ul class="menu" id="menu">
+        <li><a href="https://skeetandtrap.com/news/">News</a></li>
+        <li class="has-sub"><a href="https://skeetandtrap.com/bcsc-events/">Events</a>
+          <ul class="sub">
+            <li><a href="https://skeetandtrap.com/bcsc-events/">Club Events</a></li>
+            <li><a href="https://skeetandtrap.com/bcsc-events/central-wi-skeet-league/">Central WI Skeet League</a></li>
+            <li><a href="https://skeetandtrap.com/category/hunters-safety/">Hunter's Safety</a></li>
+            <li><a href="https://skeetandtrap.com/club-calendar/">Club &amp; Heated 5-Stand Calendar</a></li>
+          </ul>
+        </li>
+        <li><a href="https://skeetandtrap.com/reservations/">Reservations</a></li>
+        <li class="has-sub"><a href="https://skeetandtrap.com/club-information/">Club</a>
+          <ul class="sub">
+            <li><a href="https://skeetandtrap.com/club-information/">Club Info &amp; Hours</a></li>
+            <li><a href="https://skeetandtrap.com/league-information/">League Info</a></li>
+            <li><a href="https://skeetandtrap.com/wp-content/uploads/2024/02/BCSC-Membership-Status-Application-2024.pdf">Membership Application</a></li>
+            <li><a href="https://skeetandtrap.com/wp-content/uploads/2025/01/BCSC-Member-Training-Shared-Rev-11.pdf">Safety &amp; Operations Training</a></li>
+            <li><a href="https://skeetandtrap.com/shooting-tip/">Shooting Tips from Albert</a></li>
+          </ul>
+        </li>
+        <li><a href="https://skeetandtrap.com/faq/">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="https://skeetandtrap.com/wp-content/uploads/2024/02/BCSC-Membership-Status-Application-2024.pdf" class="btn btn-clay nav-cta">Become a Member</a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="img/9.jpg" alt="Shooter breaking a clay at Brown County Sportsmen's Club">
+  <div class="wrap">
+    <span class="eyebrow">Green Bay, Wisconsin</span>
+    <h1>Skeet, Trap &amp; <em>5-Stand</em> on the water</h1>
+    <p class="lead">One of the finest shotgun ranges in the state. Six fields along the lake, self-serve card readers for members from 8:00 AM to dusk every day, and everyone is welcome.</p>
+    <div class="actions">
+      <a href="https://skeetandtrap.com/learn-to-shoot/" class="btn btn-clay">Learn to Shoot (free)</a>
+      <a href="https://skeetandtrap.com/reservations/" class="btn btn-ghost">Reserve a Field</a>
+    </div>
+    <div class="hero-stats">
+      <div><b>6</b><span>Skeet &amp; trap fields</span></div>
+      <div><b>7 days</b><span>8:00 AM to dusk</span></div>
+      <div><b>Year-round</b><span>Skeet &amp; trap leagues</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="quick">
+  <div class="wrap">
+    <div class="quick-grid">
+      <a href="https://skeetandtrap.com/reservations/"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg></span><b>Reservations</b><small>Glidar &amp; heated 5-Stand booking</small></a>
+      <a href="https://skeetandtrap.com/club-calendar/"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></span><b>Club Calendar</b><small>Leagues, shoots &amp; closures</small></a>
+      <a href="https://skeetandtrap.com/wp-content/uploads/2024/02/BCSC-Membership-Status-Application-2024.pdf"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></span><b>Membership</b><small>Join or renew by mail</small></a>
+      <a href="https://skeetandtrap.com/wp-content/uploads/2025/01/BCSC-Member-Training-Shared-Rev-11.pdf"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></span><b>Safety Training</b><small>Required to shoot at the club</small></a>
+      <a href="https://forms.gle/e7tH4YeBTdr7Ed8Q6"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span><b>Maintenance</b><small>Report an issue on the fields</small></a>
+      <a href="https://skeetandtrap.com/faq/"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.7M12 17h.01"/></svg></span><b>FAQ &amp; Keys</b><small>Key documents &amp; card info</small></a>
+    </div>
+  </div>
+</section>
+
+<section id="shoot">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow">What we shoot</span><h2>Pick your game</h2></div>
+      <p>Long Range target counters let trained members open and run any field themselves, any time during daylight hours.</p>
+    </div>
+    <div class="disc-grid">
+      <article class="disc"><span class="num">01</span><h3>Skeet</h3><p>Classic high-house / low-house crossers across eight stations. Wireless voice remote available on field 2.</p><span class="tag">Self-serve</span></article>
+      <article class="disc"><span class="num">02</span><h3>Trap</h3><p>Going-away targets from the trap house. Tuesday and summer Wednesday night leagues.</p><span class="tag">Self-serve</span></article>
+      <article class="disc"><span class="num">03</span><h3>Heated 5-Stand</h3><p>Sporting-clays variety with a roof and heat. Shoot all winter long. Reserve online.</p><span class="tag">Reservation</span></article>
+      <article class="disc"><span class="num">04</span><h3>West Outdoor 5-Stand</h3><p>Six throwers, voice or controller release. Practice solo or bring a group. We'll show you how.</p><span class="tag">New</span></article>
+      <article class="disc"><span class="num">05</span><h3>Glidar Clay 5-Stand</h3><p>Glidar targets that float and dive like real birds. Book your session with the reservation tool.</p><span class="tag">Reservation</span></article>
+      <article class="disc"><span class="num">06</span><h3>Ironman</h3><p>Skeet and trap back-to-back. Tuesday-night league for those who want it all.</p><span class="tag">League</span></article>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap about-grid">
+    <div class="about-img"><img src="img/Club-Enhanced-Large.jpg" alt="Aerial view of six shotgun fields along the lake"></div>
+    <div>
+      <span class="eyebrow">Everyone is welcome</span>
+      <h2>Shoot when it suits you</h2>
+      <p>With our Long Range Target Counting system you can open a skeet, trap or 5-stand field any time during daylight hours. Stop in during clubhouse hours, meet the members, and sign up for a membership to get set up.</p>
+      <ul class="checks">
+        <li>Members shoot 8:00 AM to dusk, 7 days a week</li>
+        <li>Bring a guest: $5 non-member daily use fee</li>
+        <li>Shells for sale: 12, 20, 28 ga &amp; .410</li>
+        <li>Located right off I-41 on Green Bay's north side</li>
+      </ul>
+      <a href="https://skeetandtrap.com/club-information/" class="btn btn-clay">Club Information</a>
+    </div>
+  </div>
+</section>
+
+<section id="hours">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow">Plan your visit</span><h2>Hours</h2></div>
+      <p>The club may close for special events, so check the calendar before you head out.</p>
+    </div>
+    <div class="hours-grid">
+      <div class="hours-card feature">
+        <h3>Open Shooting</h3>
+        <div class="row"><span>Sunday – Saturday</span><b>8:00 AM – Dusk</b></div>
+        <div class="row"><span>Requires</span><b>System training</b></div>
+        <p class="note" style="color:#b7c0c4">Training: text Ridge Johansen at <a href="sms:9205624179">920-562-4179</a></p>
+      </div>
+      <div class="hours-card">
+        <h3>Clubhouse</h3>
+        <div class="row"><span>Wednesday</span><b>9:00 AM – 1:00 PM</b></div>
+        <div class="row"><span>Saturday</span><b>12:00 PM – 4:00 PM</b></div>
+        <p class="note">Shells, merchandise, memberships &amp; instruction.</p>
+      </div>
+      <div class="hours-card">
+        <h3>Leagues</h3>
+        <div class="row"><span>Tue · Trap &amp; Ironman</span><b>6 – 10 PM</b></div>
+        <div class="row"><span>Wed · Trap (summer)</span><b>6 – 10 PM</b></div>
+        <div class="row"><span>Wed · Senior 5-Stand</span><b>Mornings</b></div>
+        <div class="row"><span>Thu · Skeet &amp; 5-Stand</span><b>6 – 10 PM</b></div>
+      </div>
+    </div>
+    <p class="note">See the <a href="https://skeetandtrap.com/club-calendar/">club calendar</a> for closures and special events.</p>
+  </div>
+</section>
+
+<section class="news" id="news">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow">Club news</span><h2>What's happening</h2></div>
+      <a href="https://skeetandtrap.com/news/" class="btn btn-clay">All News</a>
+    </div>
+    <div class="news-grid">
+      <a class="post big" href="https://skeetandtrap.com/general/central-wisconsin-skeet-league-2026-27-organizational-meeting-shoot/">
+        <div class="thumb"><img src="img/image_cea2525-1-1024x703.jpg" alt=""></div>
+        <div class="body">
+          <span class="meta">Central WI Skeet League · Oct 11</span>
+          <h3>2026–27 Organizational Meeting &amp; Shoot</h3>
+          <p>A 50-bird Lewis Class shoot (any gauge) with the season meeting. Shooting starts at 10:00 AM, meeting at 11:00 AM.</p>
+          <span class="more">Continue reading</span>
+        </div>
+      </a>
+      <a class="post" href="https://skeetandtrap.com/general/new-senior-5-stand-league-wednesday-morning/">
+        <div class="thumb"><img src="img/17.jpg" alt="" style="object-position:20% center"></div>
+        <div class="body"><span class="meta">New league</span><h3>Senior 5-Stand League, Wednesday mornings</h3><p>25-bird, 3-person teams. Sign up as a captain or find a team.</p><span class="more">Read more</span></div>
+      </a>
+      <a class="post" href="https://skeetandtrap.com/general/west-5-stand-operations-2/">
+        <div class="thumb"><img src="img/West-5-Stand-765x1024.png" alt=""></div>
+        <div class="body"><span class="meta">Now open</span><h3>West Outdoor 5-Stand</h3><p>Set up so anyone can run it. Controller and voice instructions included.</p><span class="more">Read more</span></div>
+      </a>
+      <div class="list-posts">
+        <a href="https://skeetandtrap.com/general/club-keys-returned-to-lock-boxes/">Reminder: return field keys to the lock boxes <span>Flash news</span></a>
+        <a href="https://skeetandtrap.com/general/results-of-the-2026-club-shoot/">Results of the 2026 Club Shoot <span>Results</span></a>
+        <a href="https://skeetandtrap.com/general/cwsl-results-3-29-2026/">CWSL Results, 3/29/2026 <span>League</span></a>
+        <a href="https://skeetandtrap.com/general/wireless-remote/">Skeet voice wireless remote mics, $10 <span>Gear</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="programs">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow">Get involved</span><h2>Programs for everyone</h2></div>
+      <p>New to shotgun sports? Instruction is free. Stop out and we'll get you breaking clays.</p>
+    </div>
+    <div class="prog-grid">
+      <a class="prog" href="https://skeetandtrap.com/learn-to-shoot/"><img src="img/9.jpg" alt="" style="object-position:20% center"><span class="pill">Free</span><h3>Learn to Shoot</h3><p>Free trap and skeet instruction for newcomers.</p></a>
+      <a class="prog" href="https://skeetandtrap.com/general/bcsc-brown-county-clay-crushers-youth-program/"><img src="img/2026-BCSC-Club-Shoot-Winners1.jpg" alt=""><span class="pill">Youth</span><h3>Clay Crushers</h3><p>SCTP youth team, middle school to college. Wednesdays 7:00 PM.</p></a>
+      <a class="prog" href="https://skeetandtrap.com/category/hunters-safety/"><img src="img/17.jpg" alt="" style="object-position:85% center"><span class="pill">Fall</span><h3>Hunter's Safety</h3><p>DNR hunter education courses held at the club.</p></a>
+      <a class="prog" href="https://skeetandtrap.com/league-information/"><img src="img/Club-Enhanced-Large.jpg" alt=""><span class="pill">Year-round</span><h3>Leagues</h3><p>Skeet, trap, Ironman and 5-stand, with teams for every level.</p></a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="albert">
+      <img src="img/Albert-smoke-1-1024x958.png" alt="Albert, the club mascot">
+      <div>
+        <span class="eyebrow">Albert says</span>
+        <blockquote>Welcome to the club!</blockquote>
+        <a href="https://skeetandtrap.com/shooting-tip/" class="btn btn-clay">Shooting Tips from Albert</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta-band">
+      <div><h2>Stay in the loop</h2><p>League results, events and club news, straight to your inbox.</p></div>
+      <form action="https://mailchi.mp/74e2551f17cc/subscribe-to-bcsc-emails" method="get" target="_blank">
+        <input type="email" placeholder="you@example.com" aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Find us</h3>
+        <div class="item"><div><small>Address</small>1711 W. Deerfield Avenue<br>Green Bay, WI 54313</div></div>
+        <div class="item"><div><small>Phone</small><a href="tel:9204349930">(920) 434-9930</a></div></div>
+        <div class="item"><div><small>Directions</small>Off I-41 on the north side of Green Bay</div></div>
+        <a class="btn btn-clay" href="https://www.google.com/maps/dir/?api=1&destination=1711+W+Deerfield+Ave,+Green+Bay,+WI+54313">Get Directions</a>
+      </div>
+      <div class="map"><iframe loading="lazy" title="Map to Brown County Sportsmen's Club" src="https://maps.google.com/maps?q=1711%20W%20Deerfield%20Ave%2C%20Green%20Bay%2C%20WI%2054313&z=14&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><img src="img/bcsc-logo.png" alt="Brown County Sportsmen's Club"></div>
+        <p>Skeet, trap and 5-stand shooting in Green Bay, Wisconsin. Open to the public, 8:00 AM to dusk, 7 days a week.</p>
+      </div>
+      <div><h4>Club</h4><ul>
+        <li><a href="https://skeetandtrap.com/club-information/">Club Info</a></li>
+        <li><a href="https://skeetandtrap.com/league-information/">League Info</a></li>
+        <li><a href="https://skeetandtrap.com/reservations/">Reservations</a></li>
+        <li><a href="https://skeetandtrap.com/faq/">FAQ</a></li>
+        <li><a href="https://skeetandtrap.com/general/donations-to-support-your-club/">Donate</a></li>
+        <li><a href="https://skeetandtrap.com/general/volunteer-to-support-your-club/">Volunteer</a></li>
+      </ul></div>
+      <div><h4>Associations</h4><ul>
+        <li><a href="http://nssa-nsca.org/">NSSA-NSCA</a></li>
+        <li><a href="http://www.shootata.com/">Amateur Trapshooting Assn.</a></li>
+        <li><a href="http://www.wiskeet.com/">Wisconsin Skeet Shooting Assn.</a></li>
+        <li><a href="http://www.witrapshooters.com/">Wisconsin Trapshooting Assn.</a></li>
+        <li><a href="http://dnr.wi.gov/">Wisconsin DNR</a></li>
+      </ul></div>
+      <div><h4>Connect</h4><ul>
+        <li><a href="https://www.facebook.com/BrownCountySportsmensClub">Facebook</a></li>
+        <li><a href="https://mailchi.mp/74e2551f17cc/subscribe-to-bcsc-emails">Email newsletter</a></li>
+        <li><a href="https://skeetandtrap.com/general/bcsc-merchandise-available/">Club merchandise</a></li>
+        <li><a href="tel:9204349930">(920) 434-9930</a></li>
+      </ul></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Brown County Sportsmen's Club</span><span>1711 W. Deerfield Ave · Green Bay, WI 54313</span></div>
+  </div>
+</footer>
+
+<script>
+const b=document.querySelector('.burger'),m=document.getElementById('menu');
+b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+</script>
+</body>
+</html>
